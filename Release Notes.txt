@@ -1,0 +1,9 @@
+Release Notes
+
+Version: 0.0.0
+    1. Initial project setup with Java, SpringBoot and h2 db
+
+Version: 0.0.1
+    1. Code to read and display version in browser
+    2. Swagger integration
+    3. Pretty message in the logs
