@@ -25,16 +25,18 @@ dependencies {
 
 	// persistence
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-	implementation 'com.h2database:h2'
 	implementation 'org.springframework.boot:spring-boot-devtools'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-aop'
-	implementation 'org.projectlombok:lombok:1.18.22'
 
-	compileOnly 'org.projectlombok:lombok'
+	// h2
+	implementation 'com.h2database:h2'
 
 	// postgres
 	implementation 'org.postgresql:postgresql'
+
+	// log annotations
+	implementation 'org.projectlombok:lombok:1.18.22'
 
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
