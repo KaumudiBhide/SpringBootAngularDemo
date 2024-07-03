@@ -7,3 +7,12 @@ Version: 0.0.1
     1. Code to read and display version in browser
     2. Swagger integration
     3. Pretty message in the logs
+
+Version: 0.0.2
+    1. Country table CRUD API
+    2. Profile for postgres db
+    3. Basic JUnits
+
+Version: 0.0.3
+    1. IDEA Run Configuration in build.gradle
+    2. Angular UI
