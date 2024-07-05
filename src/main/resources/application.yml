@@ -4,7 +4,11 @@ spring:
     username: sa
     password:
     driverClassName: org.h2.Driver
-    initialization-mode: always
+
+  # Config to init db - always / never
+  sql:
+    init:
+      mode: never
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
