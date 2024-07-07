@@ -9,8 +9,9 @@ import { CountryService } from '../country-service.service';
   styleUrl: './info.component.css'
 })
 export class InfoComponent {
-  name: string;
-  spring: any;
+  springDesc: string;
+  springName: string;
+  springUpdated: string;
 
   constructor(private countryService: CountryService) {
   }
@@ -18,7 +19,9 @@ export class InfoComponent {
   ngOnInit() {
     this.countryService.getInfo().subscribe((data: any) => {
       console.log(data);
-      this.spring = data;
+      this.springName = data["name"];
+      this.springDesc = data["description"];
+      this.springUpdated = data["updated"];
     });
   }
 }
