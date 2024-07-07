@@ -11,9 +11,8 @@ import { CountryService } from '../country-service.service';
 export class InfoComponent {
   name: string;
   spring: any;
-  countryService: CountryService;
 
-  constructor(countryService: CountryService) {
+  constructor(private countryService: CountryService) {
   }
 
   ngOnInit() {

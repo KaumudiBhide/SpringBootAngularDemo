@@ -13,9 +13,8 @@ const httpHeaders: HttpHeaders = new HttpHeaders({
 export class CountryService {
   countryUrl: string;
   springUrl: string;
-  http: HttpClient;
 
-  constructor() {
+  constructor(private http: HttpClient) {
       this.countryUrl = 'http://localhost:6140/countries';
       this.springUrl = 'http://localhost:6140/json';
   }
