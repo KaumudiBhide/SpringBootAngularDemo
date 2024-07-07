@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Country } from './country';
+import { Country } from '../model/country';
 import { Observable } from 'rxjs';
 
 const httpHeaders: HttpHeaders = new HttpHeaders({

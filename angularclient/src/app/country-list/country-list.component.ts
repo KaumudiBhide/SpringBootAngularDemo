@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Country } from '../country';
-import { CountryService } from '../country-service.service';
+import { Country } from '../model/country';
+import { CountryService } from '../service/country-service.service';
 
 @Component({
   selector: 'app-country-list',

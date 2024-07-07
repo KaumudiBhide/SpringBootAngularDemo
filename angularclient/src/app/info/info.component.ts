@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CountryService } from '../country-service.service';
+import { CountryService } from '../service/country-service.service';
 
 @Component({
   selector: 'app-info',
