@@ -3,16 +3,29 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Country } from './country';
 import { Observable } from 'rxjs';
 
+const httpHeaders: HttpHeaders = new HttpHeaders({
+    'Accept': '*/*',
+    'Content-Type': 'application/json',
+    responseType: 'json'
+});
+
 @Injectable()
 export class CountryService {
   countryUrl: string;
+  springUrl: string;
   http: HttpClient;
+
   constructor() {
       this.countryUrl = 'http://localhost:6140/countries';
+      this.springUrl = 'http://localhost:6140/json';
   }
 
   public findAll(): Observable<Country[]> {
     return this.http.get<Country[]>(this.countryUrl);
+  }
+
+  public getInfo(): Observable<any[]> {
+     return this.http.get<any[]>(this.springUrl);
   }
 
   public save(country: Country) {

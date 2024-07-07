@@ -14,7 +14,6 @@ export class CountryListComponent {
     countries: Country[];
     countryService: CountryService;
 
-// private
   constructor(countryService: CountryService) {
   }
 
