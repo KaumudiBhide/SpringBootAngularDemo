@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @Tag(name = "Country Controller", description = "This service controls country operations")
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200")
 public class CountryController {
 
     @Autowired
