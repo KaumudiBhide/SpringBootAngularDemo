@@ -1,4 +1,4 @@
-package com.aeo.basicdemo.countries;
+package com.macarts.basicdemo.countries;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

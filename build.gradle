@@ -51,13 +51,13 @@ tasks.named('test') {
 idea.project.settings {
 	runConfigurations {
 		"Basic"(org.jetbrains.gradle.ext.Application) {
-			mainClass = "com.aeo.basicdemo.BasicDemoApplication"
+			mainClass = "com.macarts.basicdemo.BasicDemoApplication"
 			moduleName = "BasicDemo.main"
 			includeProvidedDependencies = true
 		}
 
 		"Basic-Postgres"(org.jetbrains.gradle.ext.Application) {
-			mainClass = "com.aeo.basicdemo.BasicDemoApplication"
+			mainClass = "com.macarts.basicdemo.BasicDemoApplication"
 			moduleName = "BasicDemo.main"
 			jvmArgs = "-Dspring.profiles.active=postgres"
 			includeProvidedDependencies = true

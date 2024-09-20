@@ -1,4 +1,4 @@
-package com.aeo.basicdemo;
+package com.macarts.basicdemo;
 
 import lombok.extern.slf4j.Slf4j;
 

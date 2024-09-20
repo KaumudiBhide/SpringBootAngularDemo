@@ -1,4 +1,4 @@
-package com.aeo.basicdemo.countries;
+package com.macarts.basicdemo.countries;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

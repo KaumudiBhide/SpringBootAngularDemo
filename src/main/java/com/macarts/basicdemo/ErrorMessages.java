@@ -1,4 +1,4 @@
-package com.aeo.basicdemo;
+package com.macarts.basicdemo;
 
 public class ErrorMessages {
 
