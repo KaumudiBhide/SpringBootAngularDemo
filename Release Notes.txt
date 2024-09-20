@@ -16,3 +16,4 @@ Version: 0.0.2
 Version: 0.0.3
     1. IDEA Run Configuration in build.gradle
     2. Angular UI
+    3. ReadMe.md file
