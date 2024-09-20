@@ -24,7 +24,7 @@ spring:
       settings.web-allow-others: false
 
 server:
-  port: 6000
+  port: 6600
   context-path: rest
 
 springdoc:
