@@ -37,6 +37,10 @@ Navigate to dir angularclient using command:
 
     $ cd angularclient
 
+Verify if node_modules dir is present. If not run command:
+
+    $ npm install
+
 Run `ng serve` for a dev server. 
     
     $ ng serve
@@ -53,13 +57,17 @@ Open Terminal and verify postgres is installed using the command:
 
 Verify postgres bin folder is in PATH
 
-    $ export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:PATH
+    $ export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
 Verify connection with postgres db using the command:
 
     $ psql -U postgres -d postgres
 
-Run data.sql file using the command:
+Verify if Country table is present using the command:
+
+    postgres=# select * from country;
+
+If table is not found, Run data.sql file using the command:
 
     $ psql -U postgres -d postgres < <absolute-path>/BasicDemo/src/main/resources/data.sql
 

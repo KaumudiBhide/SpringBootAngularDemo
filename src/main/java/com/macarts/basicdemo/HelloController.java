@@ -32,8 +32,8 @@ public class HelloController {
     public Map<String, String> json() {
         Map<String, String> infoMap = new HashMap<>();
         infoMap.put("name", "BasicDemo");
-        infoMap.put("description", "A basic repo with Java, SpringBoot, H2 DB and AngularJS");
-        infoMap.put("updated", "07-Jul-2024");
+        infoMap.put("description", "A basic repo with Java, SpringBoot, H2 DB (or Postgres DB) and AngularJS");
+        infoMap.put("updated", "20-Sep-2024");
         infoMap.put("message", "Corrected errors");
         return infoMap;
     }

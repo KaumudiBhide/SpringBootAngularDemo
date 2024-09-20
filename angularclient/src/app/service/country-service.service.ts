@@ -15,8 +15,8 @@ export class CountryService {
   springUrl: string;
 
   constructor(private http: HttpClient) {
-      this.countryUrl = 'http://localhost:6140/countries';
-      this.springUrl = 'http://localhost:6140/json';
+      this.countryUrl = 'http://localhost:6600/countries';
+      this.springUrl = 'http://localhost:6600/json';
   }
 
   public findAll(): Observable<Country[]> {
