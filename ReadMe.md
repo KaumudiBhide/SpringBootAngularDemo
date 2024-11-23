@@ -47,13 +47,13 @@ Run `ng serve` for a dev server.
 
 Navigate to `http://localhost:4200/`. Following page will be displayed.
 ![Home Page](angularclient/assets/HomePage.png)
-
+***
 Click on 'List of Countries' to get a Country list
 ![Countries Page](angularclient/assets/Countries.png)
-
+***
 Click on 'Basic Info' to get Info about this app.
 ![Info Page](angularclient/assets/AppInfo.png)
-
+***
 The application will automatically reload if you change any of the source files.
 
 ## To run this application with Postgres DB
