@@ -1,4 +1,4 @@
-package com.aeo.basicdemo.countries;
+package com.macarts.basicdemo.countries;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

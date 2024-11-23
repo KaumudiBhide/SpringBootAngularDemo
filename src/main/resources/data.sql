@@ -1,9 +1,9 @@
-TRUNCATE TABLE Country;
-
 CREATE TABLE IF NOT EXISTS Country (
     id INT PRIMARY KEY,
     name VARCHAR(50)
 );
+
+TRUNCATE TABLE Country;
 
 INSERT INTO Country (id, name) VALUES (100, 'USA');
 INSERT INTO Country (id, name) VALUES (200, 'UAE');

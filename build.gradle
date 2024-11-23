@@ -2,6 +2,8 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.3.1'
 	id 'io.spring.dependency-management' version '1.1.5'
+	id 'org.jetbrains.gradle.plugin.idea-ext' version "1.1.7"
+
 }
 
 group = 'com.aeo.basicdemo'
@@ -45,3 +47,21 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+idea.project.settings {
+	runConfigurations {
+		"Basic"(org.jetbrains.gradle.ext.Application) {
+			mainClass = "com.macarts.basicdemo.BasicDemoApplication"
+			moduleName = "BasicDemo.main"
+			includeProvidedDependencies = true
+		}
+
+		"Basic-Postgres"(org.jetbrains.gradle.ext.Application) {
+			mainClass = "com.macarts.basicdemo.BasicDemoApplication"
+			moduleName = "BasicDemo.main"
+			jvmArgs = "-Dspring.profiles.active=postgres"
+			includeProvidedDependencies = true
+		}
+	}
+}
+

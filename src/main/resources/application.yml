@@ -19,12 +19,12 @@ spring:
 
   h2:
     console:
-      path: /sql
+      path: /h2
       settings.trace: false
       settings.web-allow-others: false
 
 server:
-  port: 6140
+  port: 6600
   context-path: rest
 
 springdoc:

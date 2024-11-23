@@ -1,4 +1,4 @@
-package com.aeo.basicdemo;
+package com.macarts.basicdemo;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

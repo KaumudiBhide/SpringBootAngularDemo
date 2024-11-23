@@ -1,4 +1,4 @@
-package com.aeo.basicdemo;
+package com.macarts.basicdemo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
@@ -32,9 +32,9 @@ public class HelloController {
     public Map<String, String> json() {
         Map<String, String> infoMap = new HashMap<>();
         infoMap.put("name", "BasicDemo");
-        infoMap.put("description", "A basic repo with Java, SpringBoot, H2 DB and AngularJS");
-        infoMap.put("updated", "07-Jul-2024");
-        infoMap.put("message", "Corrected errors");
+        infoMap.put("description", "A basic repo with Java, SpringBoot, H2 DB (or Postgres DB) and AngularJS");
+        infoMap.put("updated", InfoMessages.LAST_UPDATED);
+        infoMap.put("message", InfoMessages.LAST_MESSAGE);
         return infoMap;
     }
 
