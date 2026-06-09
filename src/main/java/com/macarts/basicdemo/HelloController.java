@@ -40,7 +40,7 @@ public class HelloController {
 
     private String getVersion() {
         Properties versions = new Properties();
-        StringBuffer number = new StringBuffer();
+        StringBuilder number = new StringBuilder();
         try {
             versions.load(new FileInputStream("version.properties"));
             number.append(versions.getProperty("version", "X"));

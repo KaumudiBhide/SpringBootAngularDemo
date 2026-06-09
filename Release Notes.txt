@@ -17,3 +17,8 @@ Version: 0.0.3
     1. IDEA Run Configuration in build.gradle
     2. Angular UI
     3. ReadMe.md file
+
+Version: 0.0.4
+    1. Ported the code to Java 21
+    2. Ported TypeScript to >= 5.9.0
+    3. Verified with SonarQube locally that code quality is adequate

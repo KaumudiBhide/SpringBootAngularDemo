@@ -12,7 +12,7 @@ public class LogHelper {
 
     public static void printPrettyLog(String message) {
         log.info(LINE);
-        StringBuffer logBuffer = new StringBuffer(ENDS);
+        StringBuilder logBuffer = new StringBuilder(ENDS);
         logBuffer.append(SPACES);
         logBuffer.append(message);
         logBuffer.append(SPACES);

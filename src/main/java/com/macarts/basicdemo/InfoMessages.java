@@ -8,7 +8,7 @@ public class InfoMessages {
 
     public static final String VERSION = "Version: ";
 
-    public static final String LAST_UPDATED = "23-Nov-2024";
+    public static final String LAST_UPDATED = "09-Jun-2026";
 
-    public static final String LAST_MESSAGE = "Updated ReadMe with screen-shots";
+    public static final String LAST_MESSAGE = "Updated Java and TypeScript version";
 }

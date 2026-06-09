@@ -1,10 +1,10 @@
 # How to run this application
 
-#### This project was generated with [SpringBoot](https://github.com/angular/angular-cli) version 3.3.1 and [Java](https://github.com/angular/angular-cli) version 17.
+#### This project was generated with [SpringBoot](https://github.com/angular/angular-cli) version 3.3.1 and [Java](https://github.com/angular/angular-cli) version 21.
 
 ### Pre-requisites
     
-Open Terminal and verify Java 17 is installed using the command:
+Open Terminal and verify Java 21 is installed using the command:
 
     $ java --version
 
