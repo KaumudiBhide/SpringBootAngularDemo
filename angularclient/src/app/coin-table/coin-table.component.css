@@ -1,0 +1,19 @@
+.main-container {
+  display: flex;
+  height: 100vh; /* Optional: makes the container fill the full viewport height */
+}
+
+.canvas-container {
+  flex: 3; /* Canvas takes up 25% of the space */
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.buttons-container {
+  flex: 1; /* Buttons take up 75% of the space */
+  padding: 10px;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column; /* Stacks buttons vertically within their container */
+  gap: 10px; /* Adds space between buttons */
+}

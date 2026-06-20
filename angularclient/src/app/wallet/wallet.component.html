@@ -1,0 +1,5 @@
+<mat-grid-list cols="4" rowHeight="1:1">
+  <mat-grid-tile  *ngFor="let coin of coins">
+    <app-coin value="{{ coin.value }}"></app-coin>
+  </mat-grid-tile>
+</mat-grid-list>

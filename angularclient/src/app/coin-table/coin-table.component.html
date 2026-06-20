@@ -1,0 +1,17 @@
+<div class="main-container">
+
+  <!-- Canvas for Coins -->
+  <div class="canvas-container">
+    <app-wallet [coins]="coins"></app-wallet>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="buttons-container">
+    <button (click)="onReFill()">Re Fill All Coins</button>
+    <button (click)="onTotal()">Find Total Money</button>
+    <button (click)="onMax()">Find Maximum Coin</button>
+    <button (click)="onSort()">Sort Elements in a Stream</button>
+    <button (click)="onDistinct()">Remove duplicates in a Stream</button>
+  </div>
+
+</div>

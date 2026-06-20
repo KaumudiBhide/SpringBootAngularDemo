@@ -3,7 +3,13 @@ import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { CountryService } from './service/country-service.service';
 import { provideHttpClient } from '@angular/common/http';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), CountryService, provideHttpClient()]
+  providers: [
+    provideRouter(routes),
+    CountryService,
+    provideHttpClient(),
+    provideAnimations()
+]
 };

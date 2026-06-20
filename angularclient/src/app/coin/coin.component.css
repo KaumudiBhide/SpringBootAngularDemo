@@ -1,0 +1,47 @@
+.coin-card {
+  max-width: 150px;
+}
+
+mat-card-title {
+  color: orange;
+  font-weight: bold;
+}
+
+.image-container {
+  /* This is crucial: sets the positioning context for absolute children */
+  position: relative;
+  /* Adjust width/height as needed, or let content define it */
+  display: inline-block;
+}
+
+.image-container img {
+  /* Ensure the image fits within the container */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-textbox-input {
+  /* Position the input relative to the container's top-left corner */
+  position: absolute;
+  top: 50%;   /* Example position: start from the middle vertically */
+  left: 50%;  /* Example position: start from the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the input element itself */
+
+  /* Customize the appearance to look like a Gold coin */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  border: 2px solid rgb(255, 215, 0); /* Gold color border */
+  font-size: 36px;
+  font-weight: bold;
+  color: brown;
+
+  /* Apply border-radius for the circular shape */
+  border-radius: 50%; /* Makes the element perfectly circular/oval */
+  width: 50%;
+  height: 50%;
+
+  /* Center the text inside the input */
+  text-align: center;
+  padding: 0; /* Remove default padding for better centering */
+}
+

@@ -10,7 +10,7 @@ Open Terminal and verify Java 21 is installed using the command:
 
 ## To run this application
 
-    1. Open the build.gradle file in IntelliJ as project [IntelliJ IDEA 2024.1.4 (Community Edition)]
+    1. Open the build.gradle file in IntelliJ as project [IntelliJ IDEA 2025.2.6.1 (Community Edition)]
     2. Run configuration Basic
     3. Verify in logs that Server has started.
     4. Open the server at http://localhost:6600

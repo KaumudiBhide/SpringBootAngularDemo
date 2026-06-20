@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Country } from '../model/country';
+import { Country } from '../model/data-models';
 import { CountryService } from '../service/country-service.service';
 
 @Component({
