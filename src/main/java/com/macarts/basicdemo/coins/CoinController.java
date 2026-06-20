@@ -24,9 +24,9 @@ public class CoinController {
         return coinService.fetch();
     }
 
-    @GetMapping("/countValue")
-    public long getAllCoinsForValue(@RequestParam int value) {
-        return coinService.countValue(value);
+    @GetMapping("/count")
+    public long getTotalCoins() {
+        return coinService.count();
     }
 
     @GetMapping("/distinct")

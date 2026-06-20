@@ -6,7 +6,7 @@ public interface CoinService {
 
     public List<Coin> fetch();
 
-    public long countValue(int value);
+    public long count();
 
     public List<Coin> removeDupes();
 

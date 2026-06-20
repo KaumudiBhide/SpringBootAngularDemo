@@ -12,6 +12,8 @@ export class CoinService {
     coinDistUrl: string;
     coinTotalUrl: string;
     coinMaxUrl: string;
+    coinNextMaxUrl: string;
+    coinCountUrl: string;
 
   constructor(private http: HttpClient) {
       this.coinUrl = 'http://localhost:6600/coins';
@@ -19,6 +21,8 @@ export class CoinService {
       this.coinDistUrl = 'http://localhost:6600/distinct';
       this.coinTotalUrl = 'http://localhost:6600/sum';
       this.coinMaxUrl = 'http://localhost:6600/maxValue';
+      this.coinNextMaxUrl = 'http://localhost:6600/nextMax'
+      this.coinCountUrl = 'http://localhost:6600/count'
   }
 
   public getCoins(): Observable<Coin[]> {
@@ -39,5 +43,13 @@ export class CoinService {
 
   public getMaxCoin(): Observable<number> {
         return this.http.get<number>(this.coinMaxUrl);
+  }
+
+  public getNextMaxCoin(): Observable<number> {
+        return this.http.get<number>(this.coinNextMaxUrl);
+  }
+
+  public getCount(): Observable<number> {
+        return this.http.get<number>(this.coinCountUrl);
   }
 }

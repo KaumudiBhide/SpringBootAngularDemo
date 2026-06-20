@@ -31,13 +31,13 @@ public class CoinServiceImpl implements CoinService{
     }
 
     @Override
-    public long countValue(int value) {
+    public long count() {
         if(wallet == null)
             initWallet();
 
         return wallet
                 .stream()
-                .filter(coin -> coin.getValue() == value)
+                .filter(coin -> coin.getValue() == 100)
                 .count();
     }
 
@@ -92,7 +92,7 @@ public class CoinServiceImpl implements CoinService{
     /**
      * This method is designed to address the following problem statement:
      * Given a list of integers,
-     * write a program to find and print the second largest number using Java Stream API
+     * write a program to find and print the second-largest number using Java Stream API
      *
      * @return long - Second maximum of all coins
      */

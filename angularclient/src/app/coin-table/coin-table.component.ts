@@ -18,12 +18,16 @@ export class CoinTableComponent {
   /* To Display only one coin */
   spCoin: Coin[] = [{"value": 88, "size": 3, "color": "orange"}];
 
+  /* Stream API name */
+  streamAPIName: string;
+
   constructor(private coinService: CoinService) {}
 
   ngOnInit() {
         this.coinService.getCoins().subscribe((data: Coin[]) => {
          console.log(data);
          this.coins = data;
+         this.streamAPIName = ''
      });
   }
 
@@ -32,6 +36,7 @@ export class CoinTableComponent {
            console.log(data);
            this.coins = data;
          });
+       this.streamAPIName = 'sorted()'
    }
 
     onDistinct() {
@@ -39,6 +44,7 @@ export class CoinTableComponent {
            console.log(data);
            this.coins = data;
          });
+         this.streamAPIName = 'distinct()'
     }
 
     onReFill() {
@@ -46,6 +52,7 @@ export class CoinTableComponent {
             console.log(data);
             this.coins = [];
             this.coins = data;
+            this.streamAPIName = ''
           });
        }
 
@@ -56,6 +63,7 @@ export class CoinTableComponent {
              console.log(this.spCoin);
              this.coins = this.spCoin;
            });
+         this.streamAPIName = 'sum()'
     }
 
     onMax() {
@@ -65,5 +73,26 @@ export class CoinTableComponent {
               console.log(this.spCoin);
               this.coins = this.spCoin;
            });
+         this.streamAPIName = 'max()'
+    }
+
+    onNextMax() {
+           this.coinService.getNextMaxCoin().subscribe((data: number) => {
+             console.log(data);
+             this.spCoin[0].value = data
+              console.log(this.spCoin);
+              this.coins = this.spCoin;
+           });
+         this.streamAPIName = 'sorted(), skip(1), findFirst()'
+    }
+
+    onCount() {
+           this.coinService.getCount().subscribe((data: number) => {
+             console.log(data);
+             this.spCoin[0].value = data
+              console.log(this.spCoin);
+              this.coins = this.spCoin;
+           });
+         this.streamAPIName = 'filter(), count()'
     }
 }
