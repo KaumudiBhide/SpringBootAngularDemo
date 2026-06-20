@@ -1,0 +1,14 @@
+mat-card {
+  text-align: center;
+  margin: 0px;
+  padding: 12px;
+}
+
+mat-card-actions {
+  justify-content: center;
+}
+
+button[mat-fab] {
+  box-shadow: none !important;
+  background-color: white;
+}

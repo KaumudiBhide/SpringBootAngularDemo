@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-header">
+        <app-search-panel-card (filterApplied)="onFilter($event)"></app-search-panel-card>
+      </div>
+      <div class="card my-2">
+        <div class="card-body">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Account</th>
+              <th scope="col">Description</th>
+              <th scope="col">Category</th>
+              <th scope="col">Sub Category</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Payee</th>
+              <th scope="col">Hypo Account</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let country of filteredCountries; let i = index">
+              <td>{{country.name}}</td>
+              <td>{{country.code}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
