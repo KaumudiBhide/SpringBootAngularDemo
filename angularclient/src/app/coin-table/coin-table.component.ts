@@ -3,11 +3,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { CoinService } from '../service/coin.service';
 import { Coin } from '../model/data-models';
 import { WalletComponent } from '../wallet/wallet.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-coin-table',
   standalone: true,
   imports: [MatGridListModule, WalletComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './coin-table.component.html',
   styleUrl: './coin-table.component.css'
 })

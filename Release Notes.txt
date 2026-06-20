@@ -22,3 +22,8 @@ Version: 0.0.4
     1. Ported the code to Java 21
     2. Ported TypeScript to >= 5.9.0
     3. Verified with SonarQube locally that code quality is adequate
+
+Version: 0.0.5
+    1. Added 2 pages: Stream Demo and Search Countries
+    2. UI Enhancements with Popups and Logs
+    3. Code Cleanup and minor tweaks
