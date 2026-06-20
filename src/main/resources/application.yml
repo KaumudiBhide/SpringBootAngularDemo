@@ -8,7 +8,7 @@ spring:
   # Config to init db - always / never
   sql:
     init:
-      mode: always
+      mode: never
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect

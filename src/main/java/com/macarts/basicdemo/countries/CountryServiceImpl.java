@@ -1,15 +1,17 @@
 package com.macarts.basicdemo.countries;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
 
+@Slf4j
 @Service
 public class CountryServiceImpl implements CountryService {
     @Autowired
-    CountriesRepository repository;
+    CountryRepository repository;
 
     @Override
     public Country saveCountry(Country country) {
@@ -37,5 +39,16 @@ public class CountryServiceImpl implements CountryService {
     @Override
     public void deleteCountryById(Long id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public List<Country> searchCountries(String code, String name) {
+
+        List<Country> searched
+                = repository.searchCountries(code, name);
+
+        log.debug("filtered countries: {}", searched);
+
+        return searched;
     }
 }

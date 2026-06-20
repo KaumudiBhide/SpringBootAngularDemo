@@ -11,7 +11,7 @@ import { MatSelectChange } from '@angular/material/select';
 import { MaterialModule } from '../material.module';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { AlertPopupComponent } from '../alert-popup/alert-popup.component';
-const DATA_LIMIT: number = 10;
+const DATA_LIMIT: number = 20;
 import {
   MatDialog,
   MatDialogActions,

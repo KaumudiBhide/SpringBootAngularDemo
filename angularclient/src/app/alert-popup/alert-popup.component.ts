@@ -23,7 +23,7 @@ export class AlertPopupComponent {
   }
 
   ngOnInit() {
-    this.imgSrc = this.data.type + '.gif';
+    this.imgSrc = 'images\\' + this.data.type + '.gif';
   }
 
   get primaryColor(): string {

@@ -17,4 +17,6 @@ public interface CountryService {
     // Delete operation
     void deleteCountryById(Long id);
 
+    // Search operation
+    List<Country> searchCountries(String code, String name);
 }

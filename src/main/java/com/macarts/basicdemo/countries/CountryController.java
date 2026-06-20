@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Comparator;
 import java.util.List;
 
 @RestController
@@ -48,4 +49,22 @@ public class CountryController {
         return "Deleted Successfully";
     }
 
+    @GetMapping("/search")
+    public List<Country> searchCountries(
+            @RequestParam(defaultValue = "") String name,
+            @RequestParam(defaultValue = "") String code) {
+
+        log.debug("name: {}", name);
+        log.debug("code: {}", code);
+
+        List<Country> countryList
+                = countryService.searchCountries(name, code);
+
+        log.debug("countries: {}", countryList);
+
+        // sort by name
+        return countryList.stream()
+                .sorted(Comparator.comparing(Country::getName))
+                .toList();
+    }
 }
