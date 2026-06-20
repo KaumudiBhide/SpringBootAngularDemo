@@ -2,3 +2,33 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Global Colors used across app */
+:root {
+  --parrot-green: #43a047; /* Material Green 600 */
+}
+
+/* Other global styles */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+td , th {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 250px;
+}
+
+.app-btn {
+  background-color: var(--parrot-green);
+  color: white;
+}
+
+.app-btn-clear {
+  background-color: lightblue;
+}
+
+mat-card {
+  border-radius: 10px !important;
+  padding: 20px;
+  overflow: hidden; /* Clips content to the rounded border */
+}

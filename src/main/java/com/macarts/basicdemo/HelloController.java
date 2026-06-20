@@ -35,6 +35,7 @@ public class HelloController {
         infoMap.put("description", "A basic repo with Java, SpringBoot, H2 DB (or Postgres DB) and Angular");
         infoMap.put("updated", InfoMessages.LAST_UPDATED);
         infoMap.put("message", InfoMessages.LAST_MESSAGE);
+        infoMap.put("version", getVersion());
         return infoMap;
     }
 
