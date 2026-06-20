@@ -1,3 +1,9 @@
+# SpringBootAngularDemo Web Application
+
+## A sample implementation of Java, Spring Boot and Angular
+### Java 21, Spring Boot 3.3.1 and Angular 18
+
+Demo Video Link - https://youtu.be/f0kFoyyrYWQ
 # How to run this application
 
 #### This project was generated with [SpringBoot](https://github.com/angular/angular-cli) version 3.3.1 and [Java](https://github.com/angular/angular-cli) version 21.
@@ -17,6 +23,14 @@ Open Terminal and verify Java 21 is installed using the command:
         - Open the h2 db as http://localhost:6600/h2
         - Open Swagger at http://localhost:6600/swagger-ui/index.html
 
+### To open H2  use the parameters shown in screen
+![H2-DB-Connection.png](angularclient/assets/H2-DB-Connection.png)]
+
+### For first time run, open *application.yml* and change db mode to *always*
+#### This will load the *data.sql* and create the table
+![First-Run.png](angularclient/assets/First-Run.png)
+
+#### For subsequent runs, make sure to change the mode back to *never*
 ## To run Angular Client UI
 
 ### Pre-requisites
