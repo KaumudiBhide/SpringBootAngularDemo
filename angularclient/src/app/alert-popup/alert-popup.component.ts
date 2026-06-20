@@ -30,9 +30,6 @@ export class AlertPopupComponent {
     switch (this.data.type) {
       case 'DBError': return '#c30b56'; // red
       case 'About': return '#d22e2e'; // dark-mango
-      case 'Warning': return '#eb5e29'; // orange
-      case 'Error': return '#f25575'; // yellow
-      case 'Next': return '#052a75'; // navy
       case 'Info': return '#5F1887'; // purple accent
       default: return '#6a1b9a'; // fallback purple
     }
@@ -42,9 +39,6 @@ export class AlertPopupComponent {
     switch (this.data.type) {
       case 'DBError': return 'clear';
       case 'About': return 'doorbell';
-      case 'Warning': return 'light';
-      case 'Error': return 'error';
-      case 'Next': return 'redo';
       case 'Info': return 'thumb_up';
       default: return 'clear';
     }

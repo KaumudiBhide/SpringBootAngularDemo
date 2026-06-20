@@ -39,19 +39,16 @@ export class SearchPanelCardComponent {
   @Output() filterApplied = new EventEmitter<Country[]>();
 
   protected filteredCountries: Country[];
-
   protected code: string;
   protected name: string;
 
   protected count: number = 0;
-
   readonly infoAlert = inject(MatDialog);
 
   constructor(protected countryService: CountryService) {
   }
 
   ngOnInit() {
-
     this.countryService.findAll().subscribe((data: Country[]) => {
       console.log(data);
       this.filteredCountries = data;
